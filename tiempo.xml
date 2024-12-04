@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Edit_Mensaje SYSTEM "Edit_Mensaje.dtd">
+<tiempo>
+    <ciudad>
+        <nombre>Castellón</nombre>
+        <estado>Soleado</estado>
+        <maxima>21</maxima>
+        <minima>10</minima>
+    </ciudad>
+    <ciudad>
+        <nombre>Valencia</nombre>
+        <estado>Lluvioso</estado>
+        <maxima>25</maxima>
+        <minima>15</minima>
+    </ciudad>
+    <ciudad>
+        <nombre>Barcelona</nombre>
+        <estado>Soleado</estado>
+        <maxima>26</maxima>
+        <minima>13</minima>
+    </ciudad>
+    <ciudad>
+        <nombre>Madrid</nombre>
+        <estado>Nublado</estado>
+        <maxima>23</maxima>
+        <minima>14</minima>
+    </ciudad>
+</tiempo>

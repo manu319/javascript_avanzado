@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Website</title>
+    <link rel="stylesheet" href="../css/style.css">  
+</head>
+<body>
+    <header>
+        <h1>Manu website</h1>
+        <nav class="nav-links">
+            <a href="../index.html">Inicio</a>
+            <a href="./galeria.html">Galería</a>
+            <a href="presupuesto.html">Presupuesto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>    
+    </header>
+
+    <main>
+
+    <form id="formulario" name="formulario" method="post" action="procesar.php">
+
+        <fieldset class="form-control">
+            <legend>Datos personales</legend>
+
+            <div class="form">
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre">
+                <small>Error mensaje</small>
+            </div>
+            <div class="form">
+                <label for="apellidos">Apellidos: </label><br>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Introduzca sus apellidos">
+                <small>Error mensaje</small>
+            </div>
+            <div class="form">
+                <label for="telefono">Teléfono: </label><br>
+                <input type="text" id="telefono" name="telefono" placeholder="Introduzca su teléfono">
+                <small>Error mensaje</small>
+            </div>
+            <div class="form">
+                <label for="correo">Correo electrónico: </label><br>
+                <input type="text" id="correo" name="correo" placeholder="Introduzca su correo electrónico">
+                <small>Error mensaje</small>
+            </div>
+            <div>
+           
+            </div>
+        </fieldset>
+
+        <fieldset class="form-control">
+            <legend>Presupuesto</legend>
+
+            <div class="form">
+                <label for="base">Elija un producto: </label>
+                <select name="base" id="base">
+                    <option value="500">Web básica 500€</option>
+                    <option value="800">HTML y CSS 800€</option>
+                    <option value="1100">Javscript avanzado 1100€</option>
+                </select>
+                <small>Error mensaje</small>
+            
+            </div>
+            
+            <div>
+                <label for="plazo">Plazo de entrega en meses: </label>
+                <input type="number" min="1" max="4" id="plazo" name="plazo">
+                <small>Error mensaje</small>
+            </div>
+    
+        <div id="extras">
+            <p>Elija los extras que desee</p><br>
+            
+            <label for="galeria">Galería</label>
+            <input type="checkbox" value="400" name="galeria" id="galeria">
+
+            <label for="Redes">Redes sociales</label>
+            <input type="checkbox" value="300" name="redes" id="redes">
+
+            <label for="mapa">Mapa</label>
+            <input type="checkbox" value="200" name="mapa" id="mapa">
+        </div><br>
+        <div>
+            <label for="total">Presupuesto estimado: </label>
+            <input type="text" id="total" value="500">
+        </div>        
+
+            
+        </fieldset>
+
+        <fieldset class="form-control">
+            <legend>Condiciones de privacidad</legend>
+            He leído la política de privacidad:  <input type="checkbox" id="politica" name="politica">
+            <div>
+                <input type="submit" id="enviar" value="Enviar">
+                <input type="reset" id="borrar" value="Borrar">
+            </div>
+        </fieldset>
+    </form>    
+    
+    </main>
+       
+    <footer>    
+        <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.jpg" alt="logo instagram"></a>
+        <a href="https://www.tiktok.com"><img src="../assets/images/logo_tiktok.jpg" alt="logo tiktok"></a>
+        <a href="https://www.facebook.com"><img src="../assets/images/logo_facebook.jpg" alt="logo facebook"></a>
+         || Web Manuel || Examen Javascript || Todos los derechos reservados ||<br><br>
+         Carrer del Ceramista Godofredo Buenosaires, 15, 12005 Castelló de la Plana, Castelló
+    </footer>
+    <script src="../js/validar.js"></script>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>    
